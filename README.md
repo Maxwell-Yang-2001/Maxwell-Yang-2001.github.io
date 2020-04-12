@@ -1,2 +1,2 @@
-# Maxwell-Yang-2001.github.io
-Personal Website for Maxwell Yang.
+## Maxwell-Yang-2001's Personal Website
+Please visit [Maxwell-Yang-2001.github.io/index.html](Maxwell-Yang-2001.github.io/index.html) for more information. 
