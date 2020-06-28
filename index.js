@@ -36,7 +36,7 @@ function loadNavigatorSelection() {
             }
         };
     }
-    
+
     contentDivs[0].style.opacity = "1";
     selectContent(contentDivs[0], 0);
 }
@@ -133,25 +133,23 @@ function selectContent(div, index) {
 
 function increaseOpacityForList(waitList) {
 
-    let timer;
+    let timers = new Array(waitList.length);
     let timeOut = 0;
 
-    waitList.forEach(sublist => {
+    for (let counter = 0; counter < waitList.length; counter ++) {
 
         setTimeout(function(){
-            timer = setInterval(function(){
-                let currentOpacity = parseFloat(getComputedStyle(sublist[0]).getPropertyValue("opacity"));
+            timers[counter] = setInterval(function() {
+                let currentOpacity = parseFloat(getComputedStyle(waitList[counter][0]).getPropertyValue("opacity"));
                 if (currentOpacity >= 1) {
-                    clearInterval(timer);
+                    clearInterval(timers[counter]);
                 } else {
                     currentOpacity += 0.01;
-
-                    sublist.forEach(ele => {
+                    waitList[counter].forEach(ele => {
                         ele.style.opacity = currentOpacity.toString();
                     });
                 }
-            });
-        }, timeOut);
+            })}, timeOut);
         timeOut += 800;
-    });
+    }
 }
