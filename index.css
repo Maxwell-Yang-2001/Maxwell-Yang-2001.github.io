@@ -19,6 +19,11 @@
 /*    display: inline;*/
 /*}*/
 
+html, body, body > div {
+    height: 100%;
+    background-color: #141439;
+}
+
 #top
 {
     background-image: url("images/cs-background.jpg");
