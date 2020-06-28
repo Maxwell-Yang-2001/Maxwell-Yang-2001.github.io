@@ -66,6 +66,7 @@ html, body, body > div {
 #navigator td {
     color: #ffffff;
     font-size: 20px;
+    text-align: center;
 }
 
 #navigator td:hover {
@@ -76,6 +77,16 @@ html, body, body > div {
 #navigator td.selected {
     color: #00b3b3;
     text-shadow: 0 0 12px #b3f0ff;
+}
+
+@media screen and (max-width: 1150px) {
+    #navigator table{
+        border-spacing: 60px 10px;
+    }
+
+    #navigator td{
+        font-size: 15px;
+    }
 }
 
 #content {
