@@ -1,7 +1,12 @@
-window.onload = function () {
+// window.onload = function () {
+//     loadNavigatorSelection();
+//     loadHrefs();
+// };
+
+window.addEventListener('load', function () {
     loadNavigatorSelection();
     loadHrefs();
-};
+});
 
 function loadNavigatorSelection() {
     let navigatorLis = document.getElementById("navigator").getElementsByTagName("td");
