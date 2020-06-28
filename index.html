@@ -1,44 +1,214 @@
-<html>
-    <head>
-        <link rel="shortcut icon" href="images/photo.jpg" />
-<!--        <link href="../css/subHtml.css" rel="stylesheet" type="text/css" />-->
-        <title>Maxwell-Yang-2001's Personal Website</title>
-        <script src="index.js"></script>
-        <link href="index.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div id = "navigator">
-            <ul>
-                <li class = "selected">Home</li>
-                <li>Work Experience</li>
-                <li>Academic Projects</li>
-                <li>Personal Projects</li>
-                <li>Contact</li>
-            </ul>
-            <div id = "navigator_underline">
-            </div>
-        </div>
-        <div id = "content">
-            <!--            Home-->
-            <div class = "selected">
-               1
-            </div>
-            <!--            Work Experience-->
-            <div>
-                2
-            </div>
-            <!--            Academic Projects-->
-            <div>
-                3
-            </div>
-            <!--            Personal Projects-->
-            <div>
-                4
-            </div>
-            <!--            contact-->
-            <div>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images/icon.jpg"/>
+    <!--        <link href="../css/subHtml.css" rel="stylesheet" type="text/css" />-->
+<title>Shukan (Maxwell) Yang's Personal Website</title>
+<script src="index.js"></script>
+<link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top">
+    <h1>Shukan (Maxwell) Yang</h1>
+    <h2>4th year Computer Science Honour student at UBC</h2>
+    <h3>Currently seeking for an internship</h3>
+</div>
 
+<div id="navigator">
+    <table>
+        <tr>
+            <td class="selected">About me</td>
+            <td>Education</td>
+            <td>Work Experience</td>
+            <td>Competitions</td>
+            <td>Academic Projects</td>
+            <td>Personal Projects</td>
+            <td>Contact Me</td>
+        </tr>
+    </table>
+</div>
+<div id="content">
+    <!--    About me-->
+    <div id="about_me" class = "selected">
+        <div>
+            <span class = "px60">I am a </span><span class = "px60 yellow">Computer Science</span><span class = "px60"> enthusiast.</span><br><br><br><br>
+            <span class = "px40">My job preferences are software engineer, mobile and web developer.</span><br><br><br><br>
+            <span class = "px40">Here are some technical skills that I have:</span><br><br>
+            <ul>
+                <li class = "circle_styled"><span class = "yellow">Programming</span>: Java, C/C++, C#, Assembly, Racket</li>
+                <li><span class = "yellow">Web</span>: HTML, CSS, JavaScript, TypeScript, PHP</li>
+                <li class = "circle_styled"><span class = "yellow">Database</span>: SQL, MySQL</li>
+                <li><span class = "yellow">Tools / Environment</span>: Git,Eclipse, IntelliJ, Atom,Node.js, REST, Postman </li>
+                <li class = "circle_styled"><span class = "yellow">Test</span>: JUnit5, Yarn, Chai, Mocha</li>
+            </ul>
+        </div>
+        <img src = "images/photo.png" alt = "Maxwell"/>
+    </div>
+
+    <!--    Education-->
+    <div id="education">
+        <img src = "images/UBC_white.png" alt = "UBC"/>
+        <div>
+            <table>
+                <tr>
+                    <td>University:</td>
+                    <td>University of British Columbia (UBC)</td>
+                </tr>
+                <tr>
+                    <td>Year:</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Degree:</td>
+                    <td>Honours in Computer Science, Software Engineering Option</td>
+                </tr>
+                <tr>
+                    <td>Average:</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Extra:</td>
+                    <td>UBC Dean's List, Trek's Excellence Scholarship (for top 5%)</td>
+                </tr>
+            </table>
+            <div id = "view_transcript" class = "svg-clickable">
+                <svg width="40" height="30">
+                    <g>
+                        <rect fill="none" height="27" stroke="#000000" stroke-width="3" width="16" x="2" y="2"/>
+                        <rect fill="none" height="27" stroke="#000000" stroke-width="3" width="16" x="18" y="2"/>
+                        <line fill="none" stroke="#000000" stroke-width="2" x1="5" x2="15" y1="9" y2="9"/>
+                        <line fill="none" stroke="#000000" stroke-width="2" x1="5" x2="15" y1="15" y2="15"/>
+                        <line fill="none" stroke="#000000" stroke-width="2" x1="5" x2="15" y1="21" y2="21"/>
+                        <line fill="none" stroke="#000000" stroke-width="2" x1="21" x2="31" y1="9" y2="9"/>
+                        <line fill="none" stroke="#000000" stroke-width="2" x1="21" x2="31" y1="15" y2="15"/>
+                        <line fill="none" stroke="#000000" stroke-width="2" x1="21" x2="31" y1="21" y2="21"/>
+                    </g>
+                </svg>
+                <span>View my transcript</span>
             </div>
         </div>
-    </body>
+    </div>
+
+    <!--    Work Experience-->
+    <div id="work_experience">
+        <div>
+            <span>Computer Science Teaching Assistant at UBC</span><br><br>
+            <span class = "font-differ">September 2019 - April 2020</span><br><br>
+            <ul>
+                <li>Communicate with students in labs and tutorials to assist them in course materials;</li>
+                <li>Actively answer questions asked by students on online forum <a href = "https://piazza.com" target = "_blank">(piazza)</a>.</li>
+                <li>Courses: CPSC 121 <a href = "https://www.students.cs.ubc.ca/~cs-121/current/" target = "_blank">(Models of Computation)</a>, CPSC 210 <a href = "https://sites.google.com/site/ubccpsc210enrol/" target = "_blank">(Software Construction)</a>.</li>
+            </ul>
+        </div>
+    </div>
+    <!--    competitions-->
+    <div id = "competitions">
+        <div>
+            <span>IEEEXtreme Programming Competition 13.0</span><br><br>
+            <span class = "font-differ">October 2019</span><br><br>
+            <ul>
+                <li>During a day, participants go through a set of programming challenges, which are mainly about <span class = "yellow">algorithm designs</span> and <span class = "yellow">data structures</span>.</li>
+                <li>Team (with 2 other members) ranked <span class = "yellow">1st among 55 teams in Canada</span>, and <span class = "yellow">top 5% globally</span>.
+                <li>Results are posted on their <a href = "https://ieeextreme.org/13-0-ranking/" target = "_blank">website</a> (team code is <span class = "font-differ">c0der</span>).
+            </ul>
+        </div>
+        <img src = "images/ieee.png" alt = "IEEEXtreme">
+    </div>
+
+    <!--    Academic Projects-->
+    <div id="academic_projects">
+        <div>
+            <span>Task Manager</span><br>
+            <span>January - April 2019</span><br>
+            <ul>
+                <li>Wrote an application in <span class = "yellow">Java</span> to manage user-defined tasks</li>
+                <li>Grouped or sorted the tasks using urgency, date, and used <span class = "yellow">JSON</span> in the process of parsing information</li>
+                <li>Languages/Technologies: Java, JSON</li>
+            </ul>
+        </div>
+        <div>
+            <span>UBC Web Server Query</span><br>
+            <span>September - December 2019</span><br>
+            <ul>
+                <li>A full stack project which enables effective querying of the metadata from around the campus, with a back-end programmed in TypeScript</li>
+                <li>Implemented server-side asynchronous behaviors with <span class = "yellow">Node.js</span>, and client-side interaction with <span class = "yellow">REST</span></li>
+                <li>Applied <span class = "yellow">greedy algorithm</span> to support timetable scheduling as a supporting feature</li>
+                <li>Languages/Technologies: TypeScript, Node.js, JSON, yarn test, REST</li>
+            </ul>
+        </div>
+        <div>
+            <span>Application Manager</span><br>
+            <span>January - April 2020</span><br>
+            <ul>
+                <li>Constructed a website for mobile application analysis with database support, which provides functions such as rating, sorting and viewing application in user-defined order</li>
+                <li>Built front-end using <span class = "yellow">HTML</span>, <span class = "yellow">CSS</span>, <span class = "yellow">JavaScript</span> and <span class = "yellow">PHP</span>, query handling using <span class = "yellow">SQL</span>, and data storage using <span class = "yellow">JSON</span></li>
+                <li>Languages / Technologies: HTML, CSS, JavaScript, PHP, JSON, SQL, MySQL</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--    Personal Projects-->
+    <div id="personal_projects">
+        <div>
+            <span>Android 2D Platformer Game</span><br>
+            <span>April 2018</span><br>
+            <ul>
+                <li>A 2D ninja platformer game on <span class = "yellow">Android</span>, implemented in <span class = "yellow">Android Studio</span> using <span class = "yellow">Java</span></li>
+                <li>Arts and music were mainly created using <span class = "yellow">Photoshop</span> and <span class = "yellow">Musescore</span></li>
+                <li>Languages / Technologies: Java, Android Studio, Photoshop, Musescore</li>
+            </ul>
+        </div>
+        <div>
+            <span>Online Mathematical Toolkit</span><br>
+            <span>April 2020 - current</span><br>
+            <ul>
+                <li>Implemented mainly in <span class = "yellow">HTML</span>, <span class = "yellow">CSS</span> and <span class = "yellow">JavaScript</span>, and has been creating an online toolkit with several fundamental tools for mathematics students (basic calculator, matrix algebra, calculus)</li>
+                <li>Currently working on increasing the efficiency of code and implementing additional supports for user preferences using <span class = "yellow">PHP</span> and <span class = "yellow">SQL</span>.</li>
+                <li>Languages / Technologies: HTML, CSS, JavaScript, PHP, SQL, MySQL</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--    Contact me-->
+    <div id="contact_me">
+        <table>
+            <tr>
+                <td>Phone Number:</td>
+                <td>+1(778)321-7782</td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><a href = "mailto:shukan.yang@alumni.ubc.ca">shukan.yang@alumni.ubc.ca</a></td>
+            </tr>
+        </table>
+        <div id = "view_resume" class = "svg-clickable">
+            <svg width="40" height="30">
+                <g>
+                    <rect fill="none" height="27" stroke="#000000" stroke-width="3" width="16" x="2" y="2"/>
+                    <rect fill="none" height="27" stroke="#000000" stroke-width="3" width="16" x="18" y="2"/>
+                    <line fill="none" stroke="#000000" stroke-width="2" x1="5" x2="15" y1="9" y2="9"/>
+                    <line fill="none" stroke="#000000" stroke-width="2" x1="5" x2="15" y1="15" y2="15"/>
+                    <line fill="none" stroke="#000000" stroke-width="2" x1="5" x2="15" y1="21" y2="21"/>
+                    <line fill="none" stroke="#000000" stroke-width="2" x1="21" x2="31" y1="9" y2="9"/>
+                    <line fill="none" stroke="#000000" stroke-width="2" x1="21" x2="31" y1="15" y2="15"/>
+                    <line fill="none" stroke="#000000" stroke-width="2" x1="21" x2="31" y1="21" y2="21"/>
+                </g>
+            </svg>
+            <span>View my resume</span>
+        </div>
+    </div>
+</div>
+<div id = "end">
+    <div>
+        <span>Links:</span>
+        <div>
+            <img src = "files/GitHub_Logo.png" alt = "GitHub"/>
+            <a href = "https://github.com/Maxwell-Yang-2001?tab=repositories" target = "_blank">GitHub</a>
+        </div>
+        <div>
+            <img src = "files/LinkedIn_Logo.png" alt = "LinkedIn"/>
+            <a href = "https://www.linkedin.com/in/shukan-yang-106376152/" target = "_blank">LinkedIn</a>
+        </div>
+    </div>
+</div>
+</body>
 </html>
