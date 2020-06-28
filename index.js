@@ -11,6 +11,7 @@ window.addEventListener('load', function () {
 function loadNavigatorSelection() {
     let navigatorLis = document.getElementById("navigator").getElementsByTagName("td");
     let contentDivs = document.getElementById("content").children;
+    contentDivs[0].style.opacity = "0";
     let counter;
 
     for (counter = 0; counter < navigatorLis.length; counter ++) {
@@ -35,7 +36,8 @@ function loadNavigatorSelection() {
             }
         };
     }
-
+    
+    contentDivs[0].style.opacity = "1";
     selectContent(contentDivs[0], 0);
 }
 
