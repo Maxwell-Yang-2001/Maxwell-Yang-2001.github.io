@@ -20,7 +20,6 @@
 /*}*/
 
 html, body, body > div {
-    height: 100%;
     background-color: #141439;
 }
 
@@ -54,7 +53,7 @@ html, body, body > div {
     background-color: #141439;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 #navigator table {
