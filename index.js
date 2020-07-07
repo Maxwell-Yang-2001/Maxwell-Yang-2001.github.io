@@ -108,7 +108,8 @@ function selectContent(div, index) {
             temp = div.children;
             waitlist = [[temp[0]],
                         [temp[1]],
-                        [temp[2]]];
+                        [temp[2]],
+                        [temp[3]]];
             break;
         case 5:
             temp = div.children;
