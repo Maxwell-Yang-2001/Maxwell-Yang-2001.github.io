@@ -205,6 +205,10 @@ html, body, body > div {
     padding: 130px 10%;
 }
 
+#work_experience > div {
+    margin-bottom: 150px;
+}
+
 #work_experience > div > span{
     font-size: 40px;
     color: #00b3b3;
@@ -306,6 +310,11 @@ a:hover {
 #personal_projects > div > span {
     font-size: 40px;
     color: #00b3b3;
+}
+
+#personal_projects > div > a {
+    font-size: 30px;
+    color: yellow;
 }
 
 #personal_projects > div > span:first-child {

@@ -4,9 +4,15 @@
 // };
 
 window.addEventListener('load', function () {
+    changeSelected();
     loadNavigatorSelection();
     loadHrefs();
 });
+
+function changeSelected() {
+    deselect(document.getElementById("before-loading"));
+    select(document.getElementById("about_me"));
+}
 
 function loadNavigatorSelection() {
     let navigatorLis = document.getElementById("navigator").getElementsByTagName("td");
@@ -73,14 +79,14 @@ function deselect(element) {
 
 // this is for div slideshow
 function selectContent(div, index) {
-    let temp, waitlist;
+    let spanList, waitlist, ulList;
     switch(index) {
         case 0:
             // select me
-            temp = div.children[0].getElementsByTagName("span");
-            waitlist = [[temp[0], temp[1], temp[2]],
-                            [temp[3]],
-                            [temp[4]],
+            spanList = div.children[0].getElementsByTagName("span");
+            waitlist = [[spanList[0], spanList[1], spanList[2]],
+                            [spanList[3]],
+                            [spanList[4]],
                             [div.children[0].getElementsByTagName("ul")[0]],
                             [div.children[1]]];
             break;
@@ -91,35 +97,38 @@ function selectContent(div, index) {
             ];
             break;
         case 2:
-            temp = div.getElementsByTagName("span");
-            waitlist = [[temp[0]],
-                        [temp[1]],
-                        [div.getElementsByTagName("ul")[0]]];
-
+            spanList = div.getElementsByTagName("span");
+            ulList = div.getElementsByTagName("ul");
+            waitlist = [[spanList[0]],
+                        [spanList[1]],
+                        [ulList[0]],
+                        [spanList[12]],
+                        [spanList[13]],
+                        [ulList[1]]];
             break;
         case 3:
-            temp = div.getElementsByTagName("span");
-            waitlist = [[temp[0]],
-                        [temp[1]],
+            spanList = div.getElementsByTagName("span");
+            waitlist = [[spanList[0]],
+                        [spanList[1]],
                         [div.getElementsByTagName("ul")[0]],
                         [div.getElementsByTagName("img")[0]]];
             break;
         case 4:
-            temp = div.children;
-            waitlist = [[temp[0]],
-                        [temp[1]],
-                        [temp[2]],
-                        [temp[3]]];
+            spanList = div.children;
+            waitlist = [[spanList[0]],
+                        [spanList[1]],
+                        [spanList[2]],
+                        [spanList[3]]];
             break;
         case 5:
-            temp = div.children;
-            waitlist = [[temp[0]],
-                        [temp[1]]];
+            spanList = div.children;
+            waitlist = [[spanList[0]],
+                        [spanList[1]]];
             break;
         case 6:
-            temp = div.getElementsByTagName("tr");
-            waitlist = [[temp[0]],
-                        [temp[1]],
+            spanList = div.getElementsByTagName("tr");
+            waitlist = [[spanList[0]],
+                        [spanList[1]],
                         [div.children[1]]];
             break;
     }
