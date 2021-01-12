@@ -380,6 +380,12 @@ a:hover {
     height: 20px;
 }
 
+#before-loading {
+    background-color: #47476b;
+    width: 100vw;
+    height: 100vh;
+}
+
 .px60 {
     font-size: 60px;
 }
