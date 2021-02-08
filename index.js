@@ -48,13 +48,16 @@ function loadNavigatorSelection() {
 }
 
 function loadHrefs() {
-    let temp = document.getElementById("view_transcript");
-    temp.onclick = function() {
+    document.getElementById("view_transcript").onclick = function() {
         window.open("files/Maxwell_Transcript.pdf");
     };
-    temp = document.getElementById("view_resume");
-    temp.onclick = function() {
+    
+    document.getElementById("view_resume_2p").onclick = function() {
         window.open("files/Maxwell_Resume.pdf");
+    }
+
+    document.getElementById("view_resume_1p").onclick = function() {
+        window.open("files/Maxwell_Resume_1p.pdf");
     }
 }
 
@@ -85,8 +88,8 @@ function selectContent(div, index) {
             // select me
             spanList = div.children[0].getElementsByTagName("span");
             waitlist = [[spanList[0], spanList[1], spanList[2]],
-                            [spanList[3]],
-                            [spanList[4]],
+                            [spanList[3], spanList[4]],
+                            [spanList[5]],
                             [div.children[0].getElementsByTagName("ul")[0]],
                             [div.children[1]]];
             break;
@@ -118,7 +121,8 @@ function selectContent(div, index) {
             waitlist = [[spanList[0]],
                         [spanList[1]],
                         [spanList[2]],
-                        [spanList[3]]];
+                        [spanList[3]],
+                        [spanList[4]]];
             break;
         case 5:
             spanList = div.children;

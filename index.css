@@ -386,6 +386,10 @@ a:hover {
     height: 100vh;
 }
 
+#view_resume_2p {
+    margin-right: 10%;
+}
+
 .px60 {
     font-size: 60px;
 }
