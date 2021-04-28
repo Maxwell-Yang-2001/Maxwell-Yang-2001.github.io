@@ -1,8 +1,3 @@
-// window.onload = function () {
-//     loadNavigatorSelection();
-//     loadHrefs();
-// };
-
 window.addEventListener('load', function () {
     changeSelected();
     loadNavigatorSelection();
@@ -102,11 +97,9 @@ function selectContent(div, index) {
         case 2:
             spanList = div.getElementsByTagName("span");
             ulList = div.getElementsByTagName("ul");
-            waitlist = [[spanList[0]],
-                        [spanList[1]],
+            waitlist = [[spanList[0], spanList[1]],
                         [ulList[0]],
-                        [spanList[12]],
-                        [spanList[13]],
+                        [spanList[13], spanList[14]],
                         [ulList[1]]];
             break;
         case 3:
