@@ -99,8 +99,10 @@ function selectContent(div, index) {
             ulList = div.getElementsByTagName("ul");
             waitlist = [[spanList[0], spanList[1]],
                         [ulList[0]],
-                        [spanList[13], spanList[14]],
-                        [ulList[1]]];
+                        [spanList[4], spanList[5]],
+                        [ulList[1]],
+                        [spanList[17], spanList[18]],
+                        [ulList[2]]];
             break;
         case 3:
             spanList = div.getElementsByTagName("span");
