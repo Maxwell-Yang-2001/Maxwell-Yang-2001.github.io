@@ -84,7 +84,7 @@ function selectContent(div, index) {
   let spanList, waitlist, ulList;
   switch (index) {
     case 0:
-      // select me
+      // About Me
       spanList = div.children[0].getElementsByTagName("span");
       waitlist = [
         [spanList[0], spanList[1], spanList[2]],
@@ -94,6 +94,7 @@ function selectContent(div, index) {
         [div.children[1]],
       ];
       break;
+    // Education
     case 1:
       waitlist = [
         [div.children[0]],
@@ -101,19 +102,22 @@ function selectContent(div, index) {
         [document.getElementById("view_transcript")],
       ];
       break;
+    // Work Experience
     case 2:
       spanList = div.getElementsByTagName("span");
       ulList = div.getElementsByTagName("ul");
       waitlist = [
         [spanList[0], spanList[1]],
-        [spanList[2], spanList[3]],
         [ulList[0]],
-        [spanList[8], spanList[9]],
+        [spanList[9], spanList[10]],
         [ulList[1]],
-        [spanList[21], spanList[22]],
+        [spanList[15], spanList[16]],
         [ulList[2]],
+        [spanList[28], spanList[29]],
+        [ulList[3]],
       ];
       break;
+    // Competitions
     case 3:
       spanList = div.getElementsByTagName("span");
       waitlist = [
@@ -123,6 +127,7 @@ function selectContent(div, index) {
         [div.getElementsByTagName("img")[0]],
       ];
       break;
+    // Academic Projects
     case 4:
       spanList = div.children;
       waitlist = [
@@ -133,10 +138,12 @@ function selectContent(div, index) {
         [spanList[4]],
       ];
       break;
+    // Personal Projects
     case 5:
       spanList = div.children;
       waitlist = [[spanList[0]], [spanList[1]]];
       break;
+    // Contact Me
     case 6:
       spanList = div.getElementsByTagName("tr");
       waitlist = [[spanList[0]], [spanList[1]], [div.children[1]]];
